@@ -7,13 +7,15 @@
 #include <ctime>
 #include <cmath>
 
-//TODO: Change to Const
+//Macro Function
 #define GENE_RAND_SEED time(NULL)
-#define GENE_SIZE_POOL 4096
-#define GENE_ALGO_LOOP 16384
-#define GENE_RATE_ELIT 0.10f
-#define GENE_RATE_MUTA 0.25f
-#define GENE_STRN_OBJS std::string("Fucking Benedu and DimiLife")
+
+//Const Variables
+const size_t GENE_SIZE_POOL = 4096;
+const size_t GENE_ALGO_LOOP = 16384;
+const size_t GENE_RATE_ELIT = 0.10f;
+const size_t GENE_RATE_MUTA = 0.25f;
+const std::string GENE_STRN_OBJS = std::string("Fucking Benedu and DimiLife");
 
 struct SGene {
 	std::string sGene;
